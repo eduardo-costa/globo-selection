@@ -1,0 +1,4 @@
+{	
+	"port": 9000,	
+	"mongoURL": "mongodb://52.24.71.71:2700/paredao"
+}

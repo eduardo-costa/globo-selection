@@ -1,0 +1,152 @@
+
+/*** Globals ***/
+
+body { background-color: #fff; }
+
+html { font-size: 12px; line-height: 1rem; }
+
+div, p 
+{ 
+	margin: 0px; 
+}
+
+
+/*
+div, p, span
+{
+	position: inherit; 
+	display:inherit; 
+	left: 0px; 
+	top: 0px; 
+	margin: 0px;	
+}
+//*/
+
+strong { font-weight: 800; }
+
+.fw { width: 100%; }
+.fh { height: 100%; }
+.fwh { width: 100%; height: 100%; }
+.abs { position: absolute; }
+.rel { position: relative; }
+.fix { position: fixed; }
+.tc { text-align: center; }
+.tl { text-align: left; }
+.tr { text-align: right; }
+.ib { display: inline-block; }
+.bl { display: block; }
+
+.fll { float: left; }
+.flr { float: right; }
+
+.s20 { width: 20px; height: 20px; }
+.s10 { width: 10px; height: 10px; }
+.s15 { width: 15px; height: 15px; }
+.s45 { width: 45px; height: 45px; }
+
+.up20 { top: -20px; }
+
+.pd1 { padding: 1px; }
+.pd5 { padding: 5px; }
+.pd10 { padding: 10px; }
+.pd15 { padding: 15px; }
+.pd20 { padding: 20px; }
+
+.alpha0 { opacity: 0.0; }
+.mt0 { margin-top: 0px; }
+.mt50 { margin-top: 50px !important; }
+
+.height0 { height: 0px !important; }
+
+/*** Tweens ***/
+
+.tw-position { transition: left 0.4s ease-out, top 0.4s ease-out; }
+.tw-alpha { transition: opacity 0.4s ease-out; }
+.tw-margin { transition: margin 0.4s ease-out; }
+.tw-size { transition: width 0.4s ease-out, height 0.4s ease-out; }
+.tw-border { transition: border 0.4s ease-out; }
+
+.tw-all { transition: all 0.4s ease-out; }
+
+/*** Colors ***/
+$globo-blue: #0669de;
+$globo-blue-light-1: #0097e8;
+$globo-orange: #ff9e3d;
+$globo-gray-dark-1: #a9a9a9;
+$globo-gray: #d6d6d6;
+$globo-gray-light-1: #eaeaea;
+$globo-gray-light-2: #f5f5f5;
+
+.g-blue 	{ background-color: $globo-blue; }
+.g-orange	{ background-color: $globo-orange; }
+.g-gray-light-1 { background-color: $globo-gray-light-1; }
+.g-gray-light-2 { background-color: $globo-gray-light-2; }
+.g-gray { background-color: $globo-gray; }
+
+
+/*** CSS ***/
+
+nav { padding-left: 5px; padding-right: 5px; }
+
+.tabs { .indicator { top: 100%; } }
+
+.btn
+{
+	transition: all 0.4s ease-out;
+	text-transform: none;
+	line-height: 3.1rem;	
+}
+
+.btn:hover
+{
+	background-color: $globo-blue-light-1;
+}
+
+input[type=text]:focus:not([readonly]), 
+input[type=password]:focus:not([readonly]), 
+input[type=email]:focus:not([readonly]), 
+input[type=url]:focus:not([readonly]), 
+input[type=time]:focus:not([readonly]), 
+input[type=date]:focus:not([readonly]), 
+input[type=datetime-local]:focus:not([readonly]), 
+input[type=tel]:focus:not([readonly]), 
+input[type=number]:focus:not([readonly]), 
+input[type=search]:focus:not([readonly]), 
+textarea.materialize-textarea:focus:not([readonly])
+{
+	border-bottom-color: $globo-blue;
+}
+
+.progress
+{
+	background-color: $globo-gray;	
+	
+	.determinate
+	{
+		background-color: $globo-orange;
+	}
+}
+/*
+.picker__holder
+{
+	div,p,span
+	{
+		position: initial; 
+		display: block; 
+		left:  initial; 
+		top:  initial; 
+		margin:  initial;	
+	}
+	
+	
+	margin: 0 auto;
+	
+	line-height: 1.5;
+	
+	.picker__frame
+	{
+		
+	}
+}
+*/
+

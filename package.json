@@ -1,0 +1,10 @@
+{
+	"name": "globo-bbb-voter",
+	"description": "Web app para captura e gerência de votos para o paredão BBB",
+	"version": "0.1.0",  
+	"dependencies": 
+	{    
+		"mongodb": "*",
+		"request": "*"
+	}
+}

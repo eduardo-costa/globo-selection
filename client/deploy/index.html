@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Sistema de votação BBB">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paredão BBB - 2015</title>
+
+	<!--Favicon-->
+	<link rel="icon" type="image/png" href="favicon.png" />
+	
+  </head>
+  <body>      
+	
+	<div class="fwh abs tc" style="position:absolute; width:100%; height:100%; text-align:center;">
+		<img src="img/mockup-portal.jpg"/>	  	
+	</div>
+	  
+	<!-- Materialize CSS Lib-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+	<link rel="stylesheet" href="css/paredao-modal.css">
+	
+	<!-- JS Tools -->	
+	<script src="js/tools/haxor/Activity.js"></script>
+	<script src="js/tools/haxor/Animation.js"></script>
+	<script src="js/tools/bowser.js"></script>
+	<script src="js/tools/modernizr.js"></script>	
+	<script src="js/tools/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+	
+									   
+	<div id="paredao-modal" class="paredao-modal fix alpha0 tw-alpha fwh" style="display: none;">
+		<div id="modal-background" class="background abs fwh"></div>
+		<div id="modal-window" class="tw-position up20 fwh abs">
+			<div id="frame-back" class="rect10-max center outline tw-all">
+				<a class="btn-floating button-close g-gray-light-1 rel"></a>
+			</div>		
+			<div id="frame-front" class="rect-max center container  tw-all">
+				<button id="button-close" class="btn-floating waves-effect waves-red white button-close rel"><i class="mdi-navigation-close black-text"></i></button>
+			
+				<div class="content fwh abs">
+					
+					<div class="rel pd20 fw tc bl">					
+						<div class="rel fw ib">
+							<div class="icon-header ib"></div>
+							<span class="title rel">QUEM DEVE SER <strong>ELIMINADO</strong>?</span>
+						</div>
+						<div class="s10"></div>
+						<div class="pattern-gray fw"></div>
+						<div class="s45"></div>
+						<div class="feedback height0 tw-size"></div>
+						<div id="name-container" class="ib tl fw tw-alpha">
+							<p class="frame-title ib"><strong  class="lb-name-1"></strong></p>
+							<div class="s15 ib"></div>
+							<p class="frame-title ib"><strong  class="lb-name-2"></strong></p>
+						</div>
+						<div class="s10"></div>
+						<div class="photo-container ib tc fw rel">
+							<div id="photo01" class="frame tw-border ib"><div class="photo-01"></div></div>
+							<div id="photo-container-space" class="s15 tw-size ib"></div>
+							<div id="photo02" class="frame tw-border ib"><div class="photo-02"></div></div>
+						</div>
+						<div class="ib tl fw">
+							<p class="frame-footer ib">Para eliminar <strong class="lb-name-1"></strong> pelo telefone, disque <strong>0800-123-001</strong> ou mande um SMS para <strong>8001</strong></p>
+							<div class="s15 ib"></div>
+							<p class="frame-footer ib">Para eliminar <strong class="lb-name-2"></strong> pelo telefone, disque <strong>0800-123-002</strong> ou mande um SMS para <strong>8002</strong></p>
+						</div>
+						
+						<div id="screen-block" class="screen-block fwh tw-alpha abs">
+							<p class="rel">VOTAÇÃO ENCERRADA</p>
+						</div>
+						
+						<div id="chart-container" class="chart-container mt50 abs">
+							<img class="chart-background abs" src="img/chart-background.png"/>
+							<div id="chart-fill" class="chart-fill fwh abs">
+								<p class="lb0 abs">50%</p>
+								<p class="lb1 abs">50%</p>
+							</div>
+							<img id="chart-white" class="chart-white abs" src="img/chart-white.png"/>
+							<div id="chart-content" class="chart-content fwh abs">
+								<p>FALTAM</p>
+								<p>00:00:00</p>
+								<p>PARA ENCERRAR A VOTAÇÃO</p>
+							</div>
+						</div>
+						
+					</div>				
+					
+					<div id="modal-footer" class="footer fw g-gray-light-2 tc tw-margin abs">
+						<a id="button-submit" class="waves-effect waves-light btn g-blue tw-position disabled abs">Envie seu voto agora</a>
+						<!--<div id="captcha" class="g-recaptcha g-recaptcha-hidden tw-margin abs" data-sitekey=""></div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<!-- Site Scripts-->
+	<script src="js/paredao.js"></script>    
+	<!-- Recaptcha é carregado por ultimo para adaptar 'site-key'-->
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="js/tools/analytics.js" async></script>
+	
+    
+  </body>
+</html>

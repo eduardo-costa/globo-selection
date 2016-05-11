@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Sistema gerência de votação BBB">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paredão BBB Manager - 2015</title>
+
+	<!--Favicon-->
+	<link rel="icon" type="image/png" href="favicon.png" />
+	
+  </head>
+  <body>      
+	
+	  
+	<!-- Materialize CSS Lib-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">	
+	<link rel="stylesheet" href="css/paredao-manager.css">
+	
+	<!-- JS Tools -->	
+	<script src="js/tools/haxor/Activity.js"></script>
+	<script src="js/tools/haxor/Animation.js"></script>
+	<script src="js/tools/bowser.js"></script>
+	<script src="js/tools/modernizr.js"></script>	
+	<script src="js/tools/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+	
+	
+	<div id="paredao-manager" class="paredao-manager fwh">
+		<nav class="g-blue">			
+			<div class="nav-wrapper">		
+				<img class="nav-logo rel" src="img/logo-globocom-48.png"/>
+				<a href="#" class="brand-logo">Paredão Manager</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<!--<li><a href="sass.html">Sass</a></li>-->				
+				</ul>
+			</div>
+		</nav>
+			
+		<div class="container rel fh">
+			<div class="row">
+				<div class="col s12">
+				  <ul class="tabs">
+					<li class="tab col s3"><a id="button-tab-create" href="#tab-create" class="active">Criar</a></li>
+					<li class="tab col s3"><a id="button-tab-list" href="#tab-list">Lista</a></li>					
+				  </ul>
+				</div>
+				<div id="tab-create" class="col s12">
+					<h3>Criar Paredão</h3>
+					<div class="bl">
+						<div class="input-field col s6">
+							<input  id="player-name-1" type="text" class="validate">
+							<label for="player-name-1">Participante 1</label>							
+						</div>
+						<div class="input-field col s6">
+							<input id="player-name-2" type="text" class="validate">
+							<label for="player-name-2">Participante 2</label>							
+						</div>
+						<p>Duração (horas)</p>
+						<p class="range-field">
+							<input type="range" id="paredao-duration" min="0.01" max="48" step="0.1"/>
+						</p>
+						
+						<a id="button-create" class="waves-effect waves-light btn g-blue fw">
+							Criar
+							<div id="spinner-create" class="preloader-create preloader-wrapper active alpha0 tw-alpha abs">
+								<div class="spinner-layer spinner-blue-only spinner-white">
+								  <div class="circle-clipper left"><div class="circle"></div></div>
+								  <div class="gap-patch"><div class="circle"></div>
+								</div>
+								<div class="circle-clipper right"><div class="circle"></div></div>
+							</div>
+						</div>
+						</a>
+						
+						
+						
+						
+						
+					</div>
+				</div>
+				
+				<div id="tab-list" class="col s12">
+					<h3>Paredões
+					<div id="spinner-list" class="preloader-list preloader-wrapper active spinner-g-blue alpha0 tw-alpha rel">
+						<div class="spinner-layer spinner-blue-only">
+						  <div class="circle-clipper left"><div class="circle"></div></div>
+						  <div class="gap-patch"><div class="circle"></div>
+						</div>
+						<div class="circle-clipper right"><div class="circle"></div></div>
+					</div>
+					</h3>
+					<ul id="paredao-list" class="collapsible" data-collapsible="accordion">
+						<!--
+						<li>
+							<a id="button-delete" item="@ID" class="btn-paredao-delete btn-floating waves-effect waves-light red abs"><i class="mdi-action-delete rel"></i></a>
+							<div class="collapsible-header"><p class="header-names ib">@N1 vs @N2</p></div>
+							<div class="collapsible-body pd10">	
+								<a href="@LNK" target="_blank"><p class="pd1">id: @ID</p></a>
+								<p class="pd1">start: @T0</p>
+								<p class="pd1">restante: @R</p>
+								<div class="input-field col fw">
+									<span>@N1 - @P1% - @C1 votos - @VPH1 votos/h</span>
+									<div class="progress">
+										<div class="determinate" style="width: @P1%"></div>
+									</div>
+								</div>
+								<div class="input-field col fw">
+									<span>@N2 - @P2% - @C2 votos - @VPH2 votos/h</span>
+									<div class="progress">
+										<div class="determinate" style="width: @P2%"></div>
+									</div>
+								</div>
+							</div>							
+						</li>
+						-->
+					</ul>
+				</div>				
+				
+			</div>				
+		</div>
+		
+	</div>
+
+	
+	
+	
+	<!-- Site Scripts-->
+	<script src="js/manager.js"></script>    
+	<script>
+	$(document).ready(
+	function()
+	{ 
+		$('ul.tabs').tabs(); 
+		$('.datepicker').pickadate
+		({
+			selectMonths: true, // Creates a dropdown to control month
+			selectYears: 15 	// Creates a dropdown of 15 years to control year
+		});
+	});
+	</script>	
+  </body>
+</html>

@@ -1,0 +1,98 @@
+@import "global";
+
+
+.paredao-manager
+{
+	
+	.nav-logo
+	{
+		top: 7px;
+		margin-right: 10px;
+	}
+	
+	
+	
+	.container
+	{
+		width: 500px;
+		
+		.btn { font-size: 1.5rem; }
+		.indicator { background-color: $globo-blue; }
+		.tabs { background-color: transparent; }
+		.tab { a { color: $globo-blue; } }
+		.row { .col { color: #000; } }
+		
+		.picker__weekday-display { background-color: $globo-blue; }
+		
+		.picker__nav--prev,
+		.picker__nav--next,
+		.picker__date-display
+		{
+			background-color: $globo-blue-light-1; 
+		}
+		
+		.preloader-create
+		{
+			width: 28px;
+			height: 28px;
+			top: 3px;
+			left: 100%;
+			margin-left: -40px;
+						
+			.spinner-white
+			{				
+				border-color: #fff !important;
+			}
+		}
+		
+		.preloader-list
+		{
+			width: 28px;
+			height: 28px;
+			top: 3px;
+			left: 0px;			
+			
+			.spinner-g-blue
+			{				
+				border-color: $globo-blue;
+			}
+		}
+		
+		.range-field
+		{
+			.thumb
+			{
+				background-color: $globo-blue;
+			}
+		}
+		
+		#paredao-list
+		{
+			.header-names
+			{
+				width: 92%;
+			}
+			
+			.btn-paredao-delete
+			{				
+				right: 30px;
+				width: 28px;
+				height: 28px;
+				margin-top: 3px;
+			}
+			
+			.mdi-action-delete
+			{
+				line-height: 2.3rem;								
+				margin: 0px;
+			}
+			
+			.collapsible-body
+			{
+				p { padding: 3px; }
+			}
+			
+		}
+				
+	}
+}
